@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-28a074ff-782d-48de-9246-32c734670c7f/styles.css">
+  <script src="_ds/nocturne-28a074ff-782d-48de-9246-32c734670c7f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --color-accent-100:#d7f5f8; --color-accent-200:#b0eaf0; --color-accent-300:#7ddce6;
+      --color-accent-400:#4dcdd9; --color-accent-500:#2cc4d6; --color-accent:#2cc4d6;
+      --color-accent-600:#1fa3b3; --color-accent-700:#167e8c; --color-accent-800:#0f5c66; --color-accent-900:#0a3d44;
+      --color-accent-2-100:#f1e4f7; --color-accent-2-200:#e0c4ef; --color-accent-2-300:#cda0e6;
+      --color-accent-2-400:#ba7edb; --color-accent-2-500:#a768c9; --color-accent-2:#a768c9;
+      --color-accent-2-600:#8a4fab; --color-accent-2-700:#6d3d87; --color-accent-2-800:#502c63; --color-accent-2-900:#341d41;
+      --color-brand-green:#93b23c;
+    }
+    body{margin:0;}
+    a{color:var(--color-accent-600);}
+    a:hover{color:var(--color-accent-700);}
+
+    /* --- responsive: phones --- */
+    @media (max-width: 760px) {
+      .home-grid { grid-template-columns: 1fr !important; max-width: 340px !important; gap: var(--space-4) !important; }
+      .logo-circle { width: 56px !important; height: 56px !important; }
+    }
+  </style>
+</helmet>
+<div dir="rtl" lang="ar" style="position: absolute; z-index: 0; width: 100vw; min-height: 100vh; overflow: hidden; font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-8); padding: var(--space-8) var(--space-4); box-sizing: border-box; color: #7E7EAD; background-color: #B48ECA00; left: -2px; top: -6px">
+
+  <canvas ref="{{ canvasRef }}" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; background-color: #00000000"></canvas>
+
+  <div style="position: absolute; bottom: var(--space-6); left: 0; right: 0; text-align: center; color: var(--color-accent-100); font-size: 14px; letter-spacing: 0.02em; z-index: 1;">By: Dr. Abdullah Hadi</div>
+<div class="home-grid" style="display:grid;grid-template-columns:repeat(3, minmax(180px,240px));gap:var(--space-6);width:100%;max-width:820px;z-index:1;">
+
+    <a href="./DiscoverYourself.dc.html" class="card elev-md" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); text-decoration: none; padding: var(--space-6) var(--space-4); text-align: center; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; border-width: 0.2px; border-style: solid; border-color: var(--color-accent-100)" style-hover="transform:translateY(-6px);border-color:var(--color-accent-600);">
+      <div style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb, var(--color-accent-700) 40%, transparent);color:var(--color-accent-100);">
+        <svg width="26" height="26" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-126.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,140.7l50.34-50.35A8,8,0,0,1,173.66,89.66Z" opacity="0"></path><path d="M172,84,116,140,88,112a8,8,0,0,0-11.31,11.31l32,32a8,8,0,0,0,11.31,0l62-62A8,8,0,0,0,172,84Z"></path><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-width="14"></circle></svg>
+      </div>
+      <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:20px;color:var(--color-text);">اعرف نفسك</span>
+    </a>
+
+    <a href="./Journey.dc.html" class="card elev-md" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); text-decoration: none; padding: var(--space-6) var(--space-4); text-align: center; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; border-width: 0.2px; border-style: solid; border-color: var(--color-accent-2-300)" style-hover="transform:translateY(-6px);border-color:var(--color-accent-2-600);">
+      <div style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb, var(--color-accent-2-700) 40%, transparent);color:var(--color-accent-2-100);">
+        <svg width="26" height="26" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><path d="M32,208 C80,160 60,96 128,96 C196,96 176,32 224,32"></path><circle cx="32" cy="208" r="14" fill="currentColor" stroke="none"></circle><circle cx="224" cy="32" r="14" fill="currentColor" stroke="none"></circle></svg>
+      </div>
+      <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:20px;color:var(--color-text);">رحلة</span>
+    </a>
+
+    <a href="./ConsultMe.dc.html" class="card elev-md" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); text-decoration: none; padding: var(--space-6) var(--space-4); text-align: center; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; border-width: 0.2px; border-style: solid; border-color: color-mix(in srgb, var(--color-brand-green) 55%, transparent)" style-hover="transform:translateY(-6px);border-color:var(--color-brand-green);">
+      <div style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb, var(--color-brand-green) 40%, transparent);color:#e8f0d2;">
+        <svg width="26" height="26" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24C69.15,24,24,65.29,24,120a95.78,95.78,0,0,0,31.13,70.44c-3.9,15.36-13.09,26.4-13.2,26.53a8,8,0,0,0,5.31,13c1.53.16,3.07.24,4.76.24,15.42,0,31.94-6.29,44.28-13.75C111.44,220.13,127.29,224,128,224c58.85,0,104-41.29,104-96S186.85,24,128,24Z"></path></svg>
+      </div>
+      <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:20px;color:var(--color-text);">استشرني</span>
+    </a>
+
+  </div><div class="logo-circle" style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 81px; height: 81px; background-color: #0F8BDC; border-radius: 50%; position: absolute; left: 21px; top: 35px"></div><div class="logo-circle" style="box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 81px; height: 81px; background-color: var(--color-accent-600); border-radius: 50%; position: absolute; left: 77px; top: 37px"><div style="font-size: 18px; line-height: 1; font-family: Inter, system-ui, sans-serif; position: absolute; left: -26px; top: 31px; width: 85px; height: 29px; text-align: center; color: var(--color-accent-2-100)">LOGO</div></div></div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const canvas = this.canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    let w, h, dpr, orbs;
+    const cs = getComputedStyle(canvas);
+    const tint = (cs.getPropertyValue('--color-accent-2-500') || '#9184d9').trim();
+    const tint2 = (cs.getPropertyValue('--color-accent-2-300') || '#c9c2ec').trim();
+
+    const resize = () => {
+      dpr = window.devicePixelRatio || 1;
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.max(18, Math.floor((w * h) / 45000));
+      orbs = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 60 + 30,
+        vx: (Math.random() - 0.5) * 0.12,
+        vy: (Math.random() - 0.5) * 0.1,
+        phase: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.0006 + 0.0003,
+        color: Math.random() < 0.5 ? tint : tint2
+      }));
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    let raf;
+    const draw = (t) => {
+      ctx.clearRect(0, 0, w, h);
+      orbs.forEach((o) => {
+        o.x += o.vx;
+        o.y += o.vy;
+        if (o.x < -o.r) o.x = w + o.r;
+        if (o.x > w + o.r) o.x = -o.r;
+        if (o.y < -o.r) o.y = h + o.r;
+        if (o.y > h + o.r) o.y = -o.r;
+        const alpha = 0.08 + 0.07 * Math.sin(t * o.speed + o.phase);
+        const grad = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+        grad.addColorStop(0, o.color);
+        grad.addColorStop(1, 'transparent');
+        ctx.globalAlpha = Math.max(0, alpha);
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      ctx.globalAlpha = 1;
+      raf = requestAnimationFrame(draw);
+    };
+    raf = requestAnimationFrame(draw);
+
+    this._cleanup = () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', resize);
+    };
+  }
+
+  componentWillUnmount() {
+    if (this._cleanup) this._cleanup();
+  }
+
+  renderVals() {
+    if (!this.canvasRef) this.canvasRef = React.createRef();
+    return { canvasRef: this.canvasRef };
+  }
+}
+
+</script>
+</body>
+</html>

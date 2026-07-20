@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-28a074ff-782d-48de-9246-32c734670c7f/styles.css">
+  <script src="_ds/nocturne-28a074ff-782d-48de-9246-32c734670c7f/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --color-accent-100:#d7f5f8; --color-accent-200:#b0eaf0; --color-accent-300:#7ddce6;
+      --color-accent-400:#4dcdd9; --color-accent-500:#2cc4d6; --color-accent:#2cc4d6;
+      --color-accent-600:#1fa3b3; --color-accent-700:#167e8c; --color-accent-800:#0f5c66; --color-accent-900:#0a3d44;
+      --color-accent-2-100:#f1e4f7; --color-accent-2-200:#e0c4ef; --color-accent-2-300:#cda0e6;
+      --color-accent-2-400:#ba7edb; --color-accent-2-500:#a768c9; --color-accent-2:#a768c9;
+      --color-accent-2-600:#8a4fab; --color-accent-2-700:#6d3d87; --color-accent-2-800:#502c63; --color-accent-2-900:#341d41;
+      --color-brand-green:#93b23c;
+    }
+    body{margin:0;}
+    /* --- responsive: phones --- */
+    @media (max-width: 760px) {
+      .home-grid { grid-template-columns: 1fr !important; max-width: 340px !important; gap: var(--space-4) !important; }
+      .journey-grid { grid-template-columns: 1fr !important; max-width: 340px !important; }
+    }
+  </style>
+</helmet>
+<div dir="rtl" lang="ar" style="width:100vw;min-height:100vh;display:flex;flex-direction:column;align-items:center;gap:var(--space-4);background:radial-gradient(ellipse at 50% 15%, color-mix(in srgb, var(--color-accent-800) 45%, transparent) 0%, transparent 60%), radial-gradient(ellipse at 85% 90%, color-mix(in srgb, var(--color-accent-2-800) 40%, transparent) 0%, transparent 60%), var(--color-bg);font-family:'Cairo',var(--font-body);text-align:center;padding:var(--space-8) var(--space-6);box-sizing:border-box;">
+
+  <div style="width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb, var(--color-accent-700) 35%, transparent);color:var(--color-accent-100);transition:transform 0.35s ease, background 0.35s ease;" style-hover="transform:translateY(-5px) scale(1.1);background:color-mix(in srgb, var(--color-accent-600) 45%, transparent);">
+    <svg width="34" height="34" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><path d="M32,208 C80,160 60,96 128,96 C196,96 176,32 224,32"></path><circle cx="32" cy="208" r="12" fill="currentColor" stroke="none"></circle><circle cx="224" cy="32" r="12" fill="currentColor" stroke="none"></circle></svg>
+  </div>
+
+  <h1 style="font-size: clamp(24px, 6vw, 32px); font-weight: 500; color: var(--color-text); margin: 0; text-align: center; font-family: Cairo">رحلة</h1>
+  <div style="width:40px;height:3px;background:var(--color-brand-green);border-radius:2px;"></div>
+  <p style="font-size:18px;color:var(--color-neutral-300);margin:0;max-width:480px;">اختر المسار الذي يشبهك اليوم، وابدأ رحلتك نحو النمو.</p>
+
+  <div class="journey-grid" style="display:grid;grid-template-columns:repeat(3, minmax(200px,260px));gap:var(--space-4);width:100%;max-width:900px;margin-top:var(--space-4);">
+
+    <div class="card elev-md" style="padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.3s ease, box-shadow 0.3s ease;" style-hover="transform:translateY(-6px);">
+      <div style="width:100%;aspect-ratio:4/3;overflow:hidden;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="journey-growth" shape="rect" placeholder="صورة النمو الشخصي" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="padding:var(--space-4);">
+        <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:18px;color:var(--color-text);">النمو الشخصي</span>
+      </div>
+    </div>
+
+    <div class="card elev-md" style="padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.3s ease, box-shadow 0.3s ease;" style-hover="transform:translateY(-6px);">
+      <div style="width:100%;aspect-ratio:4/3;overflow:hidden;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="journey-career" shape="rect" placeholder="صورة المسار المهني" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="padding:var(--space-4);">
+        <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:18px;color:var(--color-text);">المسار المهني</span>
+      </div>
+    </div>
+
+    <div class="card elev-md" style="padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.3s ease, box-shadow 0.3s ease;" style-hover="transform:translateY(-6px);">
+      <div style="width:100%;aspect-ratio:4/3;overflow:hidden;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="journey-relationships" shape="rect" placeholder="صورة العلاقات والتواصل" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="padding:var(--space-4);">
+        <span class="card-title" style="font-family:'Cairo',var(--font-heading);font-size:18px;color:var(--color-text);">العلاقات والتواصل</span>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="./index.html" style="margin-top:var(--space-4);color:var(--color-accent-300);font-family:var(--font-body);font-size:15px;text-decoration:none;" style-hover="color:var(--color-accent);">→ العودة للرئيسية</a>
+</div>
+
+</x-dc>
+</body>
+</html>
